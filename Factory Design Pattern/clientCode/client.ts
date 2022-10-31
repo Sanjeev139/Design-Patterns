@@ -1,8 +1,8 @@
-import { nokiaProduct, onePlusProduct, ProductFactory, SamsungProduct } from "../factory/productFactory"
+import { nokiaProduct, onePlusProduct, ProductFactory, samsungProduct } from "../factory/productFactory"
 
 function clientCode(p:ProductFactory) {
     console.log(p.doSomeStuff())
 }
-clientCode(new SamsungProduct())
+clientCode(new samsungProduct())
 clientCode(new onePlusProduct())
 clientCode(new nokiaProduct())
