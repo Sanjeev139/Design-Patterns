@@ -1,4 +1,4 @@
-import { createNokiaProduct, createOnePlusProduct, createSamsungProduct } from "../createProduct";
+import { SamsungProduct, OnePlusProduct, NokiaProduct } from "../createProduct";
 import { IProduct } from "../IProduct";
 
 export abstract class ProductFactory {
@@ -10,20 +10,20 @@ export abstract class ProductFactory {
     };
 }
 
-export class SamsungProduct extends ProductFactory {
+export class samsungProduct extends ProductFactory {
     public createProduct(): IProduct {
-        return new createSamsungProduct();
+        return new SamsungProduct();
     }
 }
 
 export class onePlusProduct extends ProductFactory {
     public createProduct(): IProduct {
-        return new createOnePlusProduct();
+        return new OnePlusProduct();
     }
 }
 
 export class nokiaProduct extends ProductFactory {
     public createProduct(): IProduct {
-        return new createNokiaProduct();
+        return new NokiaProduct();
     }
 }

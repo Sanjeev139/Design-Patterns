@@ -1,18 +1,18 @@
 import { IProduct } from "./IProduct"
 
-export class createSamsungProduct implements IProduct {
+export class SamsungProduct implements IProduct {
     createProdcut(): string {
         return "Create Samsung Phones";
     }
 }
 
-export class createOnePlusProduct implements IProduct {
+export class OnePlusProduct implements IProduct {
     createProdcut(): string {
         return "Create OnePlus Phones"
     }
 }
 
-export class createNokiaProduct implements IProduct {
+export class NokiaProduct implements IProduct {
     createProdcut(): string {
         return "Create Nokia Phones"
     }
