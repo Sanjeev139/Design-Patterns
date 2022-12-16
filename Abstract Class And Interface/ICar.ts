@@ -4,17 +4,18 @@ interface Car {
     createSeats():string;
 }
 
-var Hyunday : Car = {
+class Hyundai implements Car {
     createEngine(): string {
         return "Create Engine";
-    },
+    }
     createBreaks(): string {
-        return "Create Breaks"
-    },
+        return "Create Breaks";
+    }
     createSeats(): string {
-        return "Create Seats"
-    },
+        return "Create Seats";
+    }
 }
 
-console.log(Hyunday.createBreaks)
+var Car = new Hyundai()
+console.log(Car.createBreaks())
 
